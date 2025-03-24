@@ -11,6 +11,7 @@ import {
 interface UserCardProps {
   name: string
   title: string
+  linkname:string 
   description: string
   imageUrl: string
   socialLinks: {
@@ -22,6 +23,7 @@ interface UserCardProps {
 }
 
 const UserCard: React.FC<UserCardProps> = ({
+  linkname , 
   name,
   title,
   description,
@@ -29,11 +31,11 @@ const UserCard: React.FC<UserCardProps> = ({
   socialLinks,
 }) => {
   // Replace spaces and special characters in name for URL-friendly path
-  const mentorPath = `/mentors/${name.toLowerCase().replace(/ /g, "-")}`
+  // const mentorPath = `/mentors/${name.toLowerCase().replace(/ /g, "-")}`
 
   return (
     <Link
-      to={mentorPath}
+      to={`/mentor/${linkname}`}
       className="flex flex-col items-center p-0 bg-white border border-gray-200 rounded-none shadow-sm w-full max-w-[320px] mb-10 hover:bg-gray-50 hover:shadow-md transition duration-300 cursor-pointer"
     >
       {/* Image */}

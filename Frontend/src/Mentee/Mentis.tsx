@@ -16,13 +16,14 @@ function Mentis() {
           <div className="hero-section">
             <FHero></FHero>
           </div>
-          <div>
+          <div className="border-2 border-gray-400" 
+          >
             <BelowHer />
           </div>
 
           <div>
-            Mentors List
-            <div>
+           
+            <div className="border-2 border-gray-600">
               <MentorsList></MentorsList>
             </div>
           </div>

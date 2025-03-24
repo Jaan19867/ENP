@@ -15,6 +15,7 @@ const trainers = [
     title: "Software Engineer",
     description: "Graduated from NSUT Delhi(NSIT)2023'.",
     imageUrl: punitnandal,
+    linkname: "mdrizabul",
     socialLinks: {
       twitter: "",
       facebook: "",
@@ -23,10 +24,11 @@ const trainers = [
     },
   },
   {
-    name: "Meenal Beniwal",
+    name: "Md Rizabul ",
     title: "Upcoming Intern @Google",
     description: "Undergraduate student NSUT Delhi(NSIT)2025'.",
     imageUrl: meenalbeniwal,
+    linkname: "mdrizabul",
     socialLinks: {
       twitter: "",
       facebook: "",
@@ -39,6 +41,7 @@ const trainers = [
     title: "Software Engineer Intern/FTE",
     description: "Undergraduate student DTU Delhi(DCE)2024'.",
     imageUrl: uditsangwan,
+    linkname: "mdrizabul",
     socialLinks: {
       twitter: "",
       facebook: "",
@@ -51,6 +54,7 @@ const trainers = [
     title: "Software Engineer",
     description: "Graduated from IIT Roorkee 2023'.",
     imageUrl: sunitnandal,
+    linkname: "mdrizabul",
     socialLinks: {
       twitter: "",
       facebook: "",
@@ -62,6 +66,7 @@ const trainers = [
     name: "Riya Jain",
     title: "Web Developer",
     description: "Undergraduate student IGDTUW Delhi 2025'.",
+    linkname: "mdrizabul",
     imageUrl: riyajain,
     socialLinks: {
       twitter: "",
@@ -75,17 +80,20 @@ const trainers = [
 function MentorsList() {
   return (
     <div className="flex flex-col min-h-screen">
+      hi
    
       <main className="flex-grow">
         <section id="trainers" className="w-[90%] md:w-[70%] mx-auto py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
             {trainers.map((trainer, index) => (
               <Link
-                to={`/mentors/${trainer.name.toLowerCase().replace(/ /g, "-")}`}
+                to={`/mentor/${trainer.linkname}`}
                 key={index}
                 className="block w-full"
+              
               >
                 <UserCard
+                  linkname={trainer.linkname}
                   name={trainer.name}
                   title={trainer.title}
                   description={trainer.description}

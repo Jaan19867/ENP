@@ -25,11 +25,11 @@ function BelowHer() {
       <Carousel opts={{ align: "start" }} className="w-full max-w-sm">
         <CarouselContent >
           {items.map((item, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
               <div className="p-1">
                 <Card>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-3xl font-semibold">{item}</span>
+                    <span className="text-2xl font-semibold">{item}</span>
                   </CardContent>
                 </Card>
               </div>

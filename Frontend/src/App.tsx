@@ -11,6 +11,7 @@ import MentorPricing from "./Mentor/MentorPricing"
 import MentorDashboard from "./Mentor/MentorDashboard/MentorDashboard"
 import MentorSession from "./Mentor/MentorDashboard/MentorSession"
 import MentorProfile from "./Mentor/MentorDashboard/MentorProfile"
+import MdRizabul from "./Mentee/MenteeComp/Mentors/MdRizabul"
 
 function App() {
   return (
@@ -44,10 +45,21 @@ function Appbar() {
             {/* For Mentor  */}
 
             <Route path="/mentor" element={<Mentor />}></Route>
-            <Route path="/expertdashboard" element={<MentorDashboard />}></Route>
-            <Route path="/expertdashboard/profile" element={<MentorProfile />}></Route>
-            <Route path="/expertdashboard/session" element={<MentorSession />}></Route>
+            <Route
+              path="/expertdashboard"
+              element={<MentorDashboard />}
+            ></Route>
+            <Route
+              path="/expertdashboard/profile"
+              element={<MentorProfile />}
+            ></Route>
+            <Route
+              path="/expertdashboard/session"
+              element={<MentorSession />}
+            ></Route>
             <Route path="/mentor/pricing" element={<MentorPricing />}></Route>
+            <Route path="/mentor/mdrizabul" element={<MdRizabul
+            />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
