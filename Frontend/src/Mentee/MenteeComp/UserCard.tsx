@@ -54,40 +54,7 @@ const UserCard: React.FC<UserCardProps> = ({
         </p>
 
         {/* Social Links */}
-        <div className="flex justify-center mt-4 space-x-2">
-          {socialLinks.twitter && (
-            <a
-              href={socialLinks.twitter}
-              className="text-gray-500 hover:text-green-500"
-            >
-              <RiTwitterXLine className="w-7 h-7" />
-            </a>
-          )}
-          {socialLinks.facebook && (
-            <a
-              href={socialLinks.facebook}
-              className="text-gray-500 hover:text-green-500"
-            >
-              <RiFacebookCircleFill className="w-7 h-7" />
-            </a>
-          )}
-          {socialLinks.instagram && (
-            <a
-              href={socialLinks.instagram}
-              className="text-gray-500 hover:text-green-500"
-            >
-              <RiInstagramLine className="w-7 h-7" />
-            </a>
-          )}
-          {socialLinks.linkedin && (
-            <a
-              href={socialLinks.linkedin}
-              className="text-gray-500 hover:text-green-500"
-            >
-              <RiLinkedinBoxFill className="w-7 h-7" />
-            </a>
-          )}
-        </div>
+        
       </div>
     </Link>
   )

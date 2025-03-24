@@ -7,6 +7,8 @@ import uditsangwan from "../../assets/trainer-3-udit-sangal.jpg"
 import sunitnandal from "../../assets/trainer-4-sunit-nandal.jpg"
 import riyajain from "../../assets/trainer-5-riya-jain.jpg"
 
+import ProfileBox from "@/CommonComp/Profilebox"
+
 const trainers = [
   {
     name: "Punit Nandal",
@@ -95,6 +97,8 @@ function MentorsList() {
           </div>
         </section>
       </main>
+
+     
 
    
     </div>

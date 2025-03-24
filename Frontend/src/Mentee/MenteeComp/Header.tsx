@@ -1,8 +1,11 @@
 import { Input } from "@/components/ui/input" // shadcn Input component
 import { Button } from "@/components/ui/button" // shadcn Button component
 import { Search } from "lucide-react" // Icon for search
-
+import { Navigate, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 const Header = () => {
+
+  const navigate=useNavigate() ; 
   return (
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -28,6 +31,8 @@ const Header = () => {
           <Button
             variant="ghost"
             className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+
+            onClick={()=> navigate('/mentor')} 
           >
             For Experts
           </Button>
@@ -39,7 +44,10 @@ const Header = () => {
           </Button>
           {/* User Profile Avatar */}
           <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-600 font-medium">U</span>
+            <Link 
+            to={"/menteedashboard"}
+            
+            className="text-gray-600 font-medium">U</Link>
           </div>
         </div>
       </div>

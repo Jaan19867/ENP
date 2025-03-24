@@ -1,6 +1,6 @@
 import React from "react"
 import { Button } from "@/components/ui/button"
-import Header from "@/CommonComp/Header"
+import Header from "@/Mentee/MenteeComp/Header"
 import Footer from "@/CommonComp/Footer"
 import MentorsList from "./MenteeComp/MentorsList"
 import FHero from "./MenteeComp/FHero"
