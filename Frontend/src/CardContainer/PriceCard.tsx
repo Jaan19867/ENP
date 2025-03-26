@@ -1,12 +1,22 @@
 import React from "react"
+import { useNavigate } from "react-router-dom" // For navigation
 import { AiTwotoneSchedule } from "react-icons/ai"
 
-function PriceCard() {
+function PriceCard({ sessionType = "Career Mentoring", price = "₹2,999" }) {
+  const navigate = useNavigate()
+
+  const handleCardClick = () => {
+    navigate(`/payment/${sessionType}/${price.replace("₹", "")}`) // Remove ₹ for URL
+  }
+
   return (
-    <div className="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-6 w-full max-w-sm transition-all duration-300 hover:shadow-md">
+    <div
+      onClick={handleCardClick}
+      className="bg-gray-50 rounded-xl border border-gray-200 shadow-sm p-6 w-full max-w-sm transition-all duration-300 hover:shadow-md cursor-pointer"
+    >
       {/* Title Section */}
       <div className="text-lg font-semibold text-gray-800 mb-4">
-        Career Mentoring
+        {sessionType}
       </div>
 
       {/* Details and Price Section */}
@@ -19,7 +29,7 @@ function PriceCard() {
 
         {/* Price and Button Section */}
         <div className="flex items-center gap-2">
-          <span className="text-lg font-bold text-gray-800">₹2,999</span>
+          <span className="text-lg font-bold text-gray-800">{price}</span>
           <button className="bg-gray-200 text-gray-700 rounded-full p-2 hover:bg-gray-300 transition-colors duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"

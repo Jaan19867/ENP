@@ -11,7 +11,9 @@ import MentorPricing from "./Mentor/MentorPricing"
 import MentorDashboard from "./Mentor/MentorDashboard/MentorDashboard"
 import MentorSession from "./Mentor/MentorDashboard/MentorSession"
 import MentorProfile from "./Mentor/MentorDashboard/MentorProfile"
-import MdRizabul from "./Mentee/MenteeComp/Mentors/MdRizabul"
+import MdRizabul from "./Mentors/MdRizabul"
+
+import PaymentPage from "./Mentors/Payment/Payment"
 
 function App() {
   return (
@@ -43,7 +45,7 @@ function Appbar() {
             ></Route>
 
             {/* For Mentor  */}
-
+            <Route path="/payment/:sessionType/:price" element={<PaymentPage />}></Route>
             <Route path="/mentor" element={<Mentor />}></Route>
             <Route
               path="/expertdashboard"
@@ -58,8 +60,7 @@ function Appbar() {
               element={<MentorSession />}
             ></Route>
             <Route path="/mentor/pricing" element={<MentorPricing />}></Route>
-            <Route path="/mentor/mdrizabul" element={<MdRizabul
-            />}></Route>
+            <Route path="/mentor/mdrizabul" element={<MdRizabul />}></Route>
           </Routes>
         </BrowserRouter>
       </div>

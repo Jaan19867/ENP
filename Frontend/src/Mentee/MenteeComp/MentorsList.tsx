@@ -7,8 +7,6 @@ import uditsangwan from "../../assets/trainer-3-udit-sangal.jpg"
 import sunitnandal from "../../assets/trainer-4-sunit-nandal.jpg"
 import riyajain from "../../assets/trainer-5-riya-jain.jpg"
 
-import ProfileBox from "@/CommonComp/Profilebox"
-
 const trainers = [
   {
     name: "Punit Nandal",
@@ -24,7 +22,7 @@ const trainers = [
     },
   },
   {
-    name: "Md Rizabul ",
+    name: "Md Rizabul",
     title: "Upcoming Intern @Google",
     description: "Undergraduate student NSUT Delhi(NSIT)2025'.",
     imageUrl: meenalbeniwal,
@@ -79,36 +77,35 @@ const trainers = [
 
 function MentorsList() {
   return (
-    <div className="flex flex-col min-h-screen">
-      hi
-   
+    <div className="flex flex-col">
       <main className="flex-grow">
-        <section id="trainers" className="w-[90%] md:w-[70%] mx-auto py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <section
+          id="trainers"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainers.map((trainer, index) => (
               <Link
                 to={`/mentor/${trainer.linkname}`}
                 key={index}
                 className="block w-full"
-              
               >
-                <UserCard
-                  linkname={trainer.linkname}
-                  name={trainer.name}
-                  title={trainer.title}
-                  description={trainer.description}
-                  imageUrl={trainer.imageUrl}
-                  socialLinks={trainer.socialLinks}
-                />
+                <div className="h-full">
+                  <UserCard
+                    linkname={trainer.linkname}
+                    name={trainer.name}
+                    title={trainer.title}
+                    description={trainer.description}
+                    imageUrl={trainer.imageUrl}
+                    socialLinks={trainer.socialLinks}
+                    className="h-full"
+                  />
+                </div>
               </Link>
             ))}
           </div>
         </section>
       </main>
-
-     
-
-   
     </div>
   )
 }

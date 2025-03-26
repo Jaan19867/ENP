@@ -5,6 +5,13 @@ import TestimonialsSection from "@/components/ui/shared/Testimonials"
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
 
 function MdRizabul() {
+  const sessions = [
+    { sessionType: "Career Mentoring", price: "₹2,999" },
+    { sessionType: "FAAMG Interview Prep", price: "₹3,499" },
+    { sessionType: "HR Negotiation", price: "₹2,499" },
+    { sessionType: "Mock Interview", price: "₹2,999" },
+  ]
+
   return (
     <div className="flex flex-col lg:flex-row min-h-screen bg-gray-50">
       {/* Left Section: Mentor Profile */}
@@ -32,16 +39,19 @@ function MdRizabul() {
 
       {/* Right Section: Price Cards, Testimonials, and About */}
       <div className="lg:w-[70%] w-full p-8 flex flex-col gap-8">
-        <div className="text-2xl">
-
-        Book Session with Deepanshu Kalra 
+        <div className="text-2xl font-semibold text-gray-800">
+          Book a Session with Deepanshu Kalra
         </div>
+
         {/* Price Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <PriceCard />
-          <PriceCard />
-          <PriceCard />
-          <PriceCard />
+          {sessions.map((session, index) => (
+            <PriceCard
+              key={index}
+              sessionType={session.sessionType}
+              price={session.price}
+            />
+          ))}
         </div>
 
         {/* Testimonials Section */}
@@ -88,7 +98,7 @@ function MdRizabul() {
           </div>
 
           {/* About Description */}
-          <div className="text-gray-600 text-sm leading-relaxed text-xl" >
+          <div className="text-gray-600 text-sm leading-relaxed">
             Deepanshu is a data engineer with great technical skills and a
             passion for resolving complex problems with ease. He has expertise
             in the FAAMG interview process, HR negotiations, mock interviews,
