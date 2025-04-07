@@ -2,7 +2,13 @@ import React from "react"
 import { useNavigate } from "react-router-dom" // For navigation
 import { AiTwotoneSchedule } from "react-icons/ai"
 
-function PriceCard({ sessionType = "Career Mentoring", price = "₹2,999" }) {
+interface PriceCardProps{
+  sessionType:string 
+  price : string 
+  mint: string 
+}
+
+function PriceCard({ sessionType , price , mint} :PriceCardProps ) {
   const navigate = useNavigate()
 
   const handleCardClick = () => {
@@ -24,7 +30,7 @@ function PriceCard({ sessionType = "Career Mentoring", price = "₹2,999" }) {
         {/* Duration Section */}
         <div className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 text-gray-700">
           <AiTwotoneSchedule className="text-green-600" size={20} />
-          <span className="text-sm font-medium">45 mins Video Meeting</span>
+          <span className="text-sm font-medium">{mint} mins Video Meeting</span>
         </div>
 
         {/* Price and Button Section */}

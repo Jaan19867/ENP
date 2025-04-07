@@ -1,15 +1,16 @@
 import React from "react"
-import picture from "@/assets/7UWZmWQUmBSRJvf3M9AuuK.avif"
+import rizabul from "@/assets/mdrizabul.jpeg"
 import PriceCard from "@/CardContainer/PriceCard"
 import TestimonialsSection from "@/components/ui/shared/Testimonials"
+import RizTestim from "./MdRizabulTestim"
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
 
 function MdRizabul() {
   const sessions = [
-    { sessionType: "Career Mentoring", price: "₹2,999" },
-    { sessionType: "FAAMG Interview Prep", price: "₹3,499" },
-    { sessionType: "HR Negotiation", price: "₹2,499" },
-    { sessionType: "Mock Interview", price: "₹2,999" },
+    { sessionType: "DSA", price: "₹40", mint: "20" },
+    { sessionType: "DSA", price: "₹80", mint: "40" },
+    { sessionType: "Competitive Programming ", price: "₹50", mint: "20" },
+    { sessionType: "Competitive Programming ", price: "₹90", mint: "20" },
   ]
 
   return (
@@ -19,28 +20,26 @@ function MdRizabul() {
         {/* Mentor Image */}
         <div className="image-section mb-6">
           <img
-            src={picture}
-            alt="Deepanshu Kalra"
+            src={rizabul}
+            alt="Md Rizabul"
             className="w-40 h-40 rounded-full object-cover border-4 border-green-500 shadow-md"
           />
         </div>
 
         {/* Mentor Name */}
-        <div className="text-2xl font-bold text-gray-800 mb-2">
-          Deepanshu Kalra
-        </div>
+        <div className="text-2xl font-bold text-gray-800 mb-2">Md Rizabul</div>
 
         {/* Mentor Description */}
         <div className="text-gray-600 text-center text-sm leading-relaxed mb-4">
-          Data Engineer at Google, Ex-Microsoft, 50,000 followers on LinkedIn, A
-          decade of industry experience, Being who I needed when I was younger
+          Full Stack Developer | Specialist @ Codeforces | Knight @ LeetCode |
+          Full Stack Developer
         </div>
       </div>
 
       {/* Right Section: Price Cards, Testimonials, and About */}
       <div className="lg:w-[70%] w-full p-8 flex flex-col gap-8">
         <div className="text-2xl font-semibold text-gray-800">
-          Book a Session with Deepanshu Kalra
+          Book a Session with Md Rizabul
         </div>
 
         {/* Price Cards Section */}
@@ -49,6 +48,7 @@ function MdRizabul() {
             <PriceCard
               key={index}
               sessionType={session.sessionType}
+              mint={session.mint}
               price={session.price}
             />
           ))}
@@ -59,7 +59,7 @@ function MdRizabul() {
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             What Mentees Say
           </h2>
-          <TestimonialsSection />
+          <RizTestim/>
         </div>
 
         {/* About Me Section */}
@@ -69,7 +69,7 @@ function MdRizabul() {
           {/* Social Links */}
           <div className="flex gap-4 mb-4">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/md-rizabul-074bbb256/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -99,17 +99,14 @@ function MdRizabul() {
 
           {/* About Description */}
           <div className="text-gray-600 text-sm leading-relaxed">
-            Deepanshu is a data engineer with great technical skills and a
-            passion for resolving complex problems with ease. He has expertise
-            in the FAAMG interview process, HR negotiations, mock interviews,
-            and everything about the data space in tech companies. Adept at
-            maintaining focus on achieving the right end results while
-            formulating and implementing advanced technology and business
-            solutions, especially in customer analytics and growth analytics
-            areas. He is currently delivering value to customers as a Data
-            Engineer at Google with his data strategy, vision, and
-            implementation. In the past, he worked with Microsoft and touched
-            billions of users with his data solutions.
+            I'm Md Rizabul, a Full Stack Developer and an avid competitive
+            programmer. I’ve built scalable platforms such as AniCare (India’s
+            first tech-integrated pet care platform)  I specialize in
+            React, Next.js, PostgreSQL, and Docker, and I’ve solved over 1000+
+            DSA problems. Ranked Specialist at Codeforces (max rating 1454) and
+            Knight at Leetcode (max rating 1926), I’m passionate about guiding
+            students through DSA, full-stack projects, and interview prep with
+            real-world insights.
           </div>
         </div>
       </div>
