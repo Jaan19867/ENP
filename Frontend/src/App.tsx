@@ -13,7 +13,7 @@ import MentorSession from "./Mentor/MentorDashboard/MentorSession"
 import MentorProfile from "./Mentor/MentorDashboard/MentorProfile"
 import MdRizabul from "./Mentors/MdRizabul"
 
-import PaymentPage from "./Mentors/Payment/Payment"
+// import PaymentPage from "./Mentors/Payment/Payment"
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function Appbar() {
             ></Route>
 
             {/* For Mentor  */}
-            <Route path="/payment/:sessionType/:price" element={<PaymentPage />}></Route>
+            {/* <Route path="/payment/:sessionType/:price" element={<PaymentPage />}></Route> */}
             <Route path="/mentor" element={<Mentor />}></Route>
             <Route
               path="/expertdashboard"

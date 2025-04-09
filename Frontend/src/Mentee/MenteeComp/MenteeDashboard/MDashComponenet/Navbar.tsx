@@ -74,7 +74,7 @@ function Navbar() {
 export default Navbar
 
 
-function MenuIcon(props) {
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
