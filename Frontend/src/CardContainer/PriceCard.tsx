@@ -1,5 +1,5 @@
 
-import { useNavigate } from "react-router-dom" // For navigation
+// import { useNavigate } from "react-router-dom" // For navigation
 import { AiTwotoneSchedule } from "react-icons/ai"
 
 interface PriceCardProps{
@@ -9,7 +9,7 @@ interface PriceCardProps{
 }
 
 function PriceCard({ sessionType , price , mint} :PriceCardProps ) {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const handleCardClick = () => {
     window.location.href="https://forms.gle/j45J2ka17myMdC8H8"// Remove ₹ for URL
