@@ -7,7 +7,7 @@ import {
 
 
 
-import React from 'react'
+
 
 function Accordians() {
   return (

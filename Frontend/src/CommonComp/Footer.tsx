@@ -12,29 +12,29 @@ import {
 } from "@remixicon/react"
 
 const Footer: React.FC = () => {
-  const [email, setEmail] = useState<string>("")
+  // const [email, setEmail] = useState<string>("")
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    const form = e.target as HTMLFormElement
-    const emailInput = form.querySelector(
-      'input[type="text"]'
-    ) as HTMLInputElement
-    const emailValue = emailInput.value
-    setEmail(emailValue)
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault()
+  //   const form = e.target as HTMLFormElement
+  //   const emailInput = form.querySelector(
+  //     'input[type="text"]'
+  //   ) as HTMLInputElement
+  //   const emailValue = emailInput.value
+  //   // setEmail(emailValue)
 
-    try {
-      const response = await axios.post(
-        "https://saathi-xttb.onrender.com/api/userpost",
-        { email: emailValue }
-      )
-      console.log(response.data)
-    } catch (error) {
-      console.error(error)
-    }
+  //   try {
+  //     const response = await axios.post(
+  //       "https://saathi-xttb.onrender.com/api/userpost",
+  //       { email: emailValue }
+  //     )
+  //     console.log(response.data)
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
 
-    toast("Thanks for subscribing to our newsletter")
-  }
+  //   toast("Thanks for subscribing to our newsletter")
+  // }
 
   return (
     <div className="flex flex-col w-full font-sans text-xl overflow-x-hidden">
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
         <div className="mb-8 md:mb-0 md:mr-10">
           <h3 className="text-2xl uppercase font-light">SAATHI</h3>
           <p className="text-gray-700">
-            <strong>Email:</strong> punitnandal0001@gmail.com
+            <strong>Email:</strong> mustafamustafa9891@gmail.com
           </p>
         </div>
 
@@ -89,7 +89,9 @@ const Footer: React.FC = () => {
 
         <div className="mb-8 md:mb-0">
           <h4 className="text-xl font-medium">Join Our Newsletter</h4>
-          <form onSubmit={handleSubmit} className="flex items-center mt-2">
+          <form
+          //  onSubmit={handleSubmit} 
+           className="flex items-center mt-2">
             <input
               type="text"
               placeholder="Your email"

@@ -1,5 +1,6 @@
 
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
+import React from "react"
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
 function Navbar() {
@@ -68,7 +69,7 @@ function Navbar() {
 
 export default Navbar
 
-function MenuIcon(props) {
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

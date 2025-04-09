@@ -14,6 +14,7 @@ interface UserCardProps {
     instagram?: string
     linkedin?: string
   }
+  className?: string // Add this line to accept className
 }
 
 const UserCard: React.FC<UserCardProps> = ({
