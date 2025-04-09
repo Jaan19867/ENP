@@ -6,32 +6,35 @@ import meenalbeniwal from "../../assets/trainer-2-meenal-beniwal.jpg"
 import uditsangwan from "../../assets/trainer-3-udit-sangal.jpg"
 import sunitnandal from "../../assets/trainer-4-sunit-nandal.jpg"
 import riyajain from "../../assets/trainer-5-riya-jain.jpg"
+import rizabul from "../../assets/mdrizabul.jpeg"
+import sambhavising from "../../assets/sambhavisingh.png"
+import shubhamsingh from "../../assets/ShubhamSingh.png"
 
 const trainers = [
   {
-    name: "Punit Nandal",
-    title: "Software Engineer",
-    description: "Graduated from NSUT Delhi(NSIT)2023'.",
-    imageUrl: punitnandal,
+    name: "Md Rizabul ",
+    title: " Undergrad @ DTU",
+    description: "Specialist at CodeForces , Knight at LeetCode , DTU'26",
+    imageUrl: rizabul,
     linkname: "mdrizabul",
     socialLinks: {
       twitter: "",
       facebook: "",
       instagram: "",
-      linkedin: "https://www.linkedin.com/in/punit-nandal-64a8b818b/",
+      linkedin: "https://www.linkedin.com/in/md-rizabul-074bbb256/",
     },
   },
   {
-    name: "Md Rizabul",
-    title: "Upcoming Intern @Google",
-    description: "Undergraduate student NSUT Delhi(NSIT)2025'.",
-    imageUrl: meenalbeniwal,
-    linkname: "mdrizabul",
+    name: "Shambhavi Singh ",
+    title: "Upcoming Intern @BNY Mellon ",
+    description: "Undergraduate student IGDTUW 2026'.",
+    imageUrl: sambhavising,
+    linkname: "shambhavisingh",
     socialLinks: {
       twitter: "",
       facebook: "",
       instagram: "",
-      linkedin: "https://www.linkedin.com/in/meenal-beniwal-a6719022a/",
+      linkedin: "https://www.linkedin.com/in/shambhavi0709/",
     },
   },
   {
@@ -39,7 +42,7 @@ const trainers = [
     title: "Software Engineer Intern/FTE",
     description: "Undergraduate student DTU Delhi(DCE)2024'.",
     imageUrl: uditsangwan,
-    linkname: "mdrizabul",
+    linkname: "uditsangwan",
     socialLinks: {
       twitter: "",
       facebook: "",
@@ -48,31 +51,21 @@ const trainers = [
     },
   },
   {
-    name: "Sunit Nandal",
+    name: "Shubham Singh ",
     title: "Software Engineer",
-    description: "Graduated from IIT Roorkee 2023'.",
-    imageUrl: sunitnandal,
-    linkname: "mdrizabul",
+    description:
+      "Software Developer at Dardoc and Blockchain Developer at Blazeswap",
+    imageUrl: shubhamsingh,
+    linkname: "shubham singh ",
     socialLinks: {
       twitter: "",
       facebook: "",
       instagram: "",
-      linkedin: "https://www.linkedin.com/in/sunit-nandal-698842198/",
+      linkedin: "https://www.linkedin.com/in/shubham-singh-36204b238/",
     },
   },
-  {
-    name: "Riya Jain",
-    title: "Web Developer",
-    description: "Undergraduate student IGDTUW Delhi 2025'.",
-    linkname: "mdrizabul",
-    imageUrl: riyajain,
-    socialLinks: {
-      twitter: "",
-      facebook: "",
-      instagram: "",
-      linkedin: "https://www.linkedin.com/in/riya-jain-b41267258/",
-    },
-  },
+
+ 
 ]
 
 function MentorsList() {

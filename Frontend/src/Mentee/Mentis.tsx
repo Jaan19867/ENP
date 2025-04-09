@@ -17,7 +17,7 @@ function Mentis() {
       {/* Main Content */}
       <main className="flex-grow pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16">
+        <section className="bg-gradient-to-r bg-gray-200  text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FHero />
           </div>

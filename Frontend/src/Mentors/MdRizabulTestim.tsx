@@ -10,7 +10,7 @@ const testimonials = [
   {
     quote:
       "He is good mentor , He taught me where to start and provide resources for DSA . I am grateful to Rizabul ",
-    author: "Ankit Singh ",
+    author: "Ankit Yadav ",
     role: "Third year student ",
     department: "COE DTU ",
     image: TESTI2,

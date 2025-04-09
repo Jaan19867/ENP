@@ -7,10 +7,18 @@ import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
 
 function MdRizabul() {
   const sessions = [
-    { sessionType: "DSA", price: "₹40", mint: "20" },
-    { sessionType: "DSA", price: "₹80", mint: "40" },
-    { sessionType: "Competitive Programming ", price: "₹50", mint: "20" },
-    { sessionType: "Competitive Programming ", price: "₹90", mint: "20" },
+    { sessionType: "DSA Guidance ", price: "₹40", mint: "20" },
+    { sessionType: "DSA Guidance ", price: "₹80", mint: "40" },
+    {
+      sessionType: "Competitive Programming  Guidance",
+      price: "₹50",
+      mint: "20",
+    },
+    {
+      sessionType: "Competitive Programming  Guidance",
+      price: "₹90",
+      mint: "20",
+    },
   ]
 
   return (
