@@ -1,8 +1,9 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
     {
-      "src": "Frontend/index.html",
+      "src": "Frontend/dist/**",
       "use": "@vercel/static"
     }
   ],
@@ -11,8 +12,5 @@
       "src": "/(.*)",
       "dest": "Frontend/dist/$1"
     }
-  ],
-  "functions": {
-    "src": "Backend/*"
-  }
+  ]
 }
