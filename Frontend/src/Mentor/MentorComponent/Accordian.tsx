@@ -14,22 +14,33 @@ function Accordians() {
     <div>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionTrigger>Offer 1:1 session</AccordionTrigger>
           <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
+            Mentorship sessions, consultations, discovery calls - do what you do
+            best. We take care of everything else
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>Do you Love Me </AccordionTrigger>
-          <AccordionContent>Yes. I love you</AccordionContent>
+          <AccordionTrigger>Host a webinar </AccordionTrigger>
+          <AccordionContent>
+            Connect with 100s of followers at once. Classes, group calls,
+            workshops - do them all
+          </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Do you Hate Me </AccordionTrigger>
-          <AccordionContent>Yes. I also Hate you </AccordionContent>
+          <AccordionTrigger>Sell courses & products </AccordionTrigger>
+          <AccordionContent>
+            Sell courses, exclusive content, guides, ebooks, templates and
+            everything else. Start earning passively
+          </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger>Mustafa Jaane rehmat pe </AccordionTrigger>
-          <AccordionContent>Laakho Salam </AccordionContent>
+          <AccordionTrigger>Sell a subscription </AccordionTrigger>
+          <AccordionContent>
+            {" "}
+            Sell monthly subscriptions to your services. Build recurring revenue
+            sources
+          </AccordionContent>
         </AccordionItem>
       </Accordion>
     </div>
