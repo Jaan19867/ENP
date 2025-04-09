@@ -1,17 +1,15 @@
-import  { useState } from "react"
+import { useState } from "react"
 import { useParams, useNavigate } from "react-router-dom"
 import qrCode from "@/assets/upipic.jpeg"
 
-// Placeholder QR code image (replace with an actual UPI QR code image)
-const qrCodeImage = qrCode ; 
 function PaymentPage() {
   const { sessionType, price } = useParams() // Get sessionType and price from URL
   const navigate = useNavigate()
-  const [file, setFile] = useState(null)
+  const [file, setFile] = useState<File | null>(null)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState("")
 
-  const handleFileChange = (e) => {
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files[0]
     if (selectedFile && selectedFile.type.startsWith("image/")) {
       setFile(selectedFile)
@@ -22,20 +20,17 @@ function PaymentPage() {
     }
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!file) {
       setError("Please upload a payment screenshot.")
       return
     }
 
-    // Simulate API call to submit payment screenshot
     try {
-      // In a real app, you'd send the file to your backend here
       await new Promise((resolve) => setTimeout(resolve, 2000)) // Simulate 2-second delay
       setIsSubmitted(true)
 
-      // Simulate scheduling a session and notifying the user
       setTimeout(() => {
         alert(
           "Payment confirmed! You will be notified of your session time soon."
@@ -72,7 +67,7 @@ function PaymentPage() {
         {/* QR Code */}
         <div className="mb-6 flex justify-center">
           <img
-            src={qrCodeImage}
+            src={qrCode}
             alt="UPI QR Code"
             className="w-48 h-48 object-contain"
           />

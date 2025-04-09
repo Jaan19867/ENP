@@ -23,7 +23,7 @@ const UserCard: React.FC<UserCardProps> = ({
   title,
   description,
   imageUrl,
-  socialLinks,
+
 }) => {
   return (
     <Link

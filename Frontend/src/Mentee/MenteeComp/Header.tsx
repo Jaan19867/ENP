@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input" // shadcn Input component
 import { Button } from "@/components/ui/button" // shadcn Button component
 import { Search } from "lucide-react" // Icon for search
-import { Navigate, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 const Header = () => {
 
