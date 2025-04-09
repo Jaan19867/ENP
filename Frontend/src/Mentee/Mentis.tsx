@@ -1,4 +1,4 @@
-import React from "react"
+
 import Header from "@/Mentee/MenteeComp/Header"
 import Footer from "@/CommonComp/Footer"
 import MentorsList from "./MenteeComp/MentorsList"

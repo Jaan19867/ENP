@@ -1,4 +1,4 @@
-import React from "react"
+
 import MentorHeader from "./MentorComponent/Header"
 import PriceAccordians from "./MentorComponent/PriceAccordians"
 import Footer from "@/CommonComp/Footer"

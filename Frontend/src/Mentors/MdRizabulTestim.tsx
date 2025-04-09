@@ -1,8 +1,8 @@
 "use client"
-import React from "react"
+
 import { Star, Quote } from "lucide-react"
 import { motion } from "framer-motion"
-import Image from "next/image"
+
 import { Card, CardContent } from "@/components/ui/card"
 import TESTI2 from "@/assets/7UWZmWQUmBSRJvf3M9AuuK.avif"
 

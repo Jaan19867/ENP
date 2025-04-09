@@ -1,11 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import {
-  RiTwitterXLine,
-  RiFacebookCircleFill,
-  RiInstagramLine,
-  RiLinkedinBoxFill,
-} from "@remixicon/react"
+
 
 interface UserCardProps {
   name: string

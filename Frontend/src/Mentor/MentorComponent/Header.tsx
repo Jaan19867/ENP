@@ -1,6 +1,4 @@
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Search } from "lucide-react" // Icon for search
-import { Input } from "@/components/ui/input" // shadcn Input component
+
 import { Button } from "@/components/ui/button"
 import { Link, useNavigate } from "react-router-dom"
 

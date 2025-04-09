@@ -1,7 +1,7 @@
-import React from "react"
+
 import rizabul from "@/assets/mdrizabul.jpeg"
 import PriceCard from "@/CardContainer/PriceCard"
-import TestimonialsSection from "@/components/ui/shared/Testimonials"
+
 import RizTestim from "./MdRizabulTestim"
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
 

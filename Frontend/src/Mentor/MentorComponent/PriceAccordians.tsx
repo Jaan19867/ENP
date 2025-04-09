@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-import React from "react"
+
 
 function PriceAccordians() {
   return (

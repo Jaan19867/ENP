@@ -1,11 +1,5 @@
 
 
-
-
-
-
-import React from 'react'
-
 function Bookings() {
   return (
     <div>

@@ -1,11 +1,9 @@
-import React from "react"
+
 import { Link } from "react-router-dom"
 import UserCard from "./UserCard"
-import punitnandal from "../../assets/trainer-1-punit-nandal.jpg"
-import meenalbeniwal from "../../assets/trainer-2-meenal-beniwal.jpg"
+
 import uditsangwan from "../../assets/trainer-3-udit-sangal.jpg"
-import sunitnandal from "../../assets/trainer-4-sunit-nandal.jpg"
-import riyajain from "../../assets/trainer-5-riya-jain.jpg"
+
 import rizabul from "../../assets/mdrizabul.jpeg"
 import sambhavising from "../../assets/sambhavisingh.png"
 import shubhamsingh from "../../assets/ShubhamSingh.png"
